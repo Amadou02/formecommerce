@@ -1,0 +1,92 @@
+body{
+    background-color: #1CE2E6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body, main
+{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+}
+
+h1{
+    margin-top: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.form-container {
+    width: 40%;
+    margin: auto;
+}
+
+.form-label
+{
+    display: block;
+    width: 40%;
+    float: left;
+}
+
+.form-input
+{
+    width: 55%;
+    border-radius: 10px;
+    min-height: 2em;
+    padding: 5px;
+}
+span
+{
+    display: block;
+    clear: both;
+}
+
+label,input, textarea
+{
+    margin-bottom: 1.5em;
+    padding-left: 20px;
+}
+
+#cardNumber
+{
+    clear: both;
+}
+
+input::-moz-placeholder{
+    color:green;
+}
+
+fieldset
+{
+    background-color: #17BCBF;
+    margin-bottom: 0.8em;
+}
+
+.form-input:focus{
+    border-color: indigo;
+    box-shadow: 2px 2px 2px indigo;
+}
+
+legend {
+    font-size: 1.8em;
+    background-color: #17BCBF;
+}
+button
+{
+    width: 40%;
+    height: 50px;
+    font-size: large;
+    font-weight: 600;
+    background-color: indigo;
+}
+
+form div:last-child
+{
+    text-align: center;
+}

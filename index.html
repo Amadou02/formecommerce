@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de commande</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="form-container">
+            <h1>Commandes</h1>
+            <form action="index.php" method="post">
+                <fieldset>
+                    <legend>Votre identité</legend>
+                    <label for="lastname" class="form-label">Nom</label>
+                    <input type="text" name="lastname" id="lastname" class="form-input" placeholder="Nom">
+                    <label for="firstname" class="form-label">Prénom</label>
+                    <input type="text" name="firstname" id="firstname" class="form-input" placeholder="Prénom">
+                    <label for="email" class="form-label">Adresse mail</label>
+                    <input type="email" name="email" id="email" class="form-input" placeholder="dpont@gmail.com">
+                </fieldset>
+                <fieldset>
+                    <legend>Adresse de livraison</legend>
+                    <label for="address" class="form-label">Adresse </label>
+                    <textarea class="form-input" name="address" id="address" cols="30" rows="3"
+                        placeholder="25, rue du marecheal juin"></textarea>
+                    <label for="zipCode" class="form-label">Code postal</label>
+                    <input type="text" name="zipCode" id="zipCode" class="form-input" placeholder="75000">
+                    <label for="city" class="form-label">Ville</label>
+                    <input type="text" name="city" id="city" class="form-input" placeholder="Paris">
+                </fieldset>
+                <fieldset>
+                    <legend>Informations de reglement</legend>
+                    <span>Type de carte de carte bancaire :</span>
+                    <label for="visa" class="form-label">Visa
+                        <input type="radio" name="card" id="visa" class="form-input">
+                    </label>
+                    <label for="mastercard" class="form-label">Mastercard
+                        <input type="radio" name="card" id="mastercard" class="form-input">
+                    </label>
+                    <label for="cardNumber" class="form-label">Numéro de carte</label>
+                    <input type="text" name="cardNumber" id="cardNumber" class="form-input"
+                        placeholder="59 xxx xxxx xxx">
+                    <label for="cryptogram" class="form-label">Code de sécurité</label>
+                    <input type="text" name="cryptogram" id="cryptogram" class="form-input" placeholder="xxx">
+                    <label for="owner" class="form-label">Nom du titulaire</label>
+                    <input type="text" name="owner" id="owner" class="form-input" placeholder="François DUPONT">
+                </fieldset>
+                <div>
+                    <button type="submit">Valider</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
